@@ -5,3 +5,4 @@ def multiply(a,b):
 
 def divide(a):
     return (a / 10)
+
