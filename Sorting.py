@@ -33,9 +33,13 @@ class Sorting():
 
 if __name__ == "__main__":
     input1 = [int(x) for x in input().strip().split()]
+<<<<<<< HEAD
     arr = Sorting().BubbleSort(input1)
     arr1 = Sorting().InsertionSort(input1)
     print("Bubble Sort is :", end = '')
     print(arr)
+=======
+    arr1 = Sorting().InsertionSort(input1)
+>>>>>>> Module1
     print("Insertion Sort is :", end = '')
     print(arr1)
