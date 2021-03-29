@@ -12,7 +12,7 @@ class Sorting():
         n = len(arr)
 
         for i in range(n):
-            for j in range(n):
+            for j in range(i+1,n):
                 if (arr[i] < arr[j]):
                     arr[i], arr[j] = arr[j], arr[i]
 
@@ -33,13 +33,9 @@ class Sorting():
 
 if __name__ == "__main__":
     input1 = [int(x) for x in input().strip().split()]
-    print(input1)
     arr = Sorting().BubbleSort(input1)
-    arr1 = Sorting().SelectionSort(input1)
-    arr2 = Sorting().InsertionSort(input1)
+    arr1 = Sorting().InsertionSort(input1)
     print("Bubble Sort is :", end = '')
     print(arr)
-    print("Selection Sort is :", end = '')
-    print(arr1)    
-    print("Insertion Sort is :",end = ' ')
-    print(arr2)
+    print("Insertion Sort is :", end = '')
+    print(arr1)
